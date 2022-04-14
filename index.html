@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesquisa Plano de Saúde</title>
+<meta name="author" content="Codeconvey" />
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="https://www.saocristovao.com.br/wp-content/uploads/2019/04/icon-32.png"
+type="image/x-icon">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+</head>
+<body>
+<form>
+<header class="ScriptHeader">
+<div class="rt-container">
+<div class="col-rt-12">
+<div class="rt-heading">
+<h1>Pesquisa de Satisfação Plano de Saúde São Cristóvão - Março 2022 </h1>
+</div>
+</div>
+</div>
+</header>
+<section>
+<div class="rt-container">
+<div class="col-rt-12">
+<div class="Scriptcontent">
+<div class="feedback">
+<center>
+<img src="LOGO_SC horizontal colorido.png" height="62px" width="150px"> 
+<br>
+<div class="table1">
+<table style="width:100%">
+<tr>
+<p> Identificamos que você foi atendido em um dos prestadores de nossa Rede Credenciada.
+É muito importante pra nós, saber como foi este atendimento e se você teve a sua necessidade
+atendida.
+<br>
+<p>Por esse motivo, pedimos que você responda a nossa pesquisa. Você vai gastar 5 minutos do seu
+tempo, para que nós possamos
+dedicar 100% do nosso tempo para melhorar o atendimento prestado a você e aos demais
+beneficiários. </p>
+<h5> <b> <i> Agradecemos a sua colaboração! </i> </b> </h5>
+<p> (Caso responda a pesquisa via smartphone, utilize os botões na parte inferior da tela para
+avançar ou voltar pelas perguntas).</p>
+<p> <b>Atenção:</b> Ao Iniciar e Enviar esta pesquisa de satisfação ao Grupo São Cristovão Saúde,
+você concorda que suas avaliações,
+manifestações e opiniões prestadas sejam monitoradas e compliadas, juntamente ás respostas dos
+demais pacientes, gerando relatórios
+estatísticos, divulgados internamente aos nossos gestores.
+Além disso, concorda também em receber contato de um colaborador do Grupo São Cristóvão Saúde,
+responsável pela unidade a qual se referiu no questionário, caso necessário,
+para prestar mais detalhes a respeito da avaliação feita.</p>
+<br>
+</tr>
+</table>
+</div>
+</center>
+</p>
+<center>
+<!-- Text under the table -->
+<p> Por favor informe o seu grau de satisfação quanto ao atendimento recebido </p>
+</p>
+</center>
+
+<label id="Questionss">
+<b> Você recomendaria o Plano de Saúde São Cristóvão a um familiar ou amigo? </b> 
+</label> <br>
+<label id="Text">
+    Instruções da pergunta: Considerar 0 para Certamente Não e 10 para Definitivamente Sim
+</label> <br>
+<div class="CheckBox">
+    <span class="star-rating">
+        <input type="radio" onClick='ratio(1,1)' id="ratio1" name="ratingMain" value="1"><i></i>
+        <input type="radio" onClick='ratio(1,2)' id="ratio2" name="ratingMain" value="2"><i></i>
+        <input type="radio" onClick='ratio(1,3)' id="ratio3" name="ratingMain" value="3"><i></i>
+        <input type="radio" onClick='ratio(1,4)' id="ratio4" name="ratingMain" value="4"><i></i>
+        <input type="radio" onClick='ratio(1,5)' id="ratio5" name="ratingMain" value="5"><i></i>
+        <input type="radio" onClick='ratio(1,6)' id="ratio6" name="ratingMain" value="6"><i></i>
+        <input type="radio" onClick='ratio(1,7)' id="ratio7" name="ratingMain" value="7"><i></i>
+        <input type="radio" onClick='ratio(1,8)' id="ratio8" name="ratingMain" value="8"><i></i>
+        <input type="radio" onClick='ratio(1,9)' id="ratio9" name="ratingMain" value="9"><i></i>
+        <input type="radio" onClick='ratio(1,10)' id="ratio10" name="ratingMain" value="10"><i></i>
+    </span> 
+    <div id="result33" class="results"> </div>
+
+</div> 
+<div class="clear"></div>
+<hr class="survey-hr"> 
+<br>
+<label id="Questionss">
+<b>O que não atendeu a sua expectativa durante a utilização do Plano de Saúde São Cristóvão? </b>
+</label> <br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label>
+<br> 
+<br>
+<!-- Checkbox for the first question -->
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Canais de Atendimento do Plano de Saúde (Telefone (2029-7300 ou 0800-7700666),
+<br> Cris, E-Mail (planosdesaude@saocristovao.com.br),
+Site ou APP São Cristóvão) 
+<br>
+</label>
+<br>
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Prazo das Agendas para Consultas na Rede Credenciada
+</label>
+<br>
+<br>
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Prazo das Agendas para Exames na Rede Credenciada
+</label>
+<br>
+<div class="POutros">
+<P> Outros. Qual?</P>
+</div>
+<textarea class="TextArea1" name="Outros" cols="28" name="commentText" rows="2"></textarea>
+<div class="clear"> </div>
+
+<hr class="survey-hr">
+<label id="Questionss"> <b>Seu último contato com o Plano de Saúde São Cristovão, foi por meio de qual desses canais?
+</b></label> <br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label>
+<br>
+<br />
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Aplicativo São Cristovão <br>
+</label>
+<br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Atendimento Presencial (Pessoalmente)
+</label>
+<br> 
+<br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Atendimento Telefônico (0800-7700666 ou 2029-7300)
+</label>
+<br> 
+<br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Assistente Virtual (Cris)
+</label>
+<br>
+<br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2">E-mail (planodesaude@saocristovao.com.br)
+</label>
+<br>
+<br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Site (www.saocristovao.com.br)
+</label>
+<br> 
+<br>
+
+<!-- STARS FROM HERE ON NOW, I'LL LET U KNOW WHERE IT ENDS -->
+<!-- STAR 1 CLASS -->
+<div class="clear"></div>
+<hr class="survey-hr">
+<label id="Questionss"> <b>Tempo que você levou para ser chamado ao atendimento presencial (Guichês de atendimento)?
+</b>
+</label> <br>
+<label id="Text">
+    Instruções da pergunta: Considerar 1 para Insatisfeito e 10 para Muito Satisfeito
+</label>
+<div class="rating">
+
+<!-- STAR Nº1 -->
+<form method="post" action="#action-url"></form>
+<span class="star-rating">
+    <input type="radio" onClick='ratio(2,1)' id="ratio21" name="rating1" value="1"><i></i>
+    <input type="radio" onClick='ratio(2,2)' id="ratio22" name="rating1" value="2"><i></i>
+    <input type="radio" onClick='ratio(2,3)' id="ratio23" name="rating1" value="3"><i></i>
+    <input type="radio" onClick='ratio(2,4)' id="ratio24" name="rating1" value="4"><i></i>
+    <input type="radio" onClick='ratio(2,5)' id="ratio25" name="rating1" value="5"><i></i>
+    <input type="radio" onClick='ratio(2,6)' id="ratio26" name="rating1" value="6"><i></i>
+    <input type="radio" onClick='ratio(2,7)' id="ratio27" name="rating1" value="7"><i></i>
+    <input type="radio" onClick='ratio(2,8)' id="ratio28" name="rating1" value="8"><i></i>
+    <input type="radio" onClick='ratio(2,9)' id="ratio29" name="rating1" value="9"><i></i>
+    <input type="radio" onClick='ratio(2,10)' id="ratio210" name="rating1" value="10"><i></i>
+</span>
+<div id="result34"  class="results"> </div>
+</form>
+</div>
+
+
+<!-- END OF STAR Nº1 -->
+
+<!-- STAR 2 CLASS -->
+<div class="clear"></div>
+<hr class="survey-hr">
+<label id="Questionss"><b>Atenção e Cordialidade do Atendente Presencial (Guichês de Atendimento)?
+</b>
+</label> <br>
+<label id="Text">
+    Instruções da pergunta: Considerar 1 para Insatisfeito e 10 para Muito Satisfeito
+</label>
+
+<div class="rating"></div>
+<!-- STAR Nº2 -->
+<form method="post" action="#action-url"></form>
+<span class="star-rating">
+    <input type="radio" onClick='ratio(3,1)' id="ratio31" name="rating2" value="1"><i></i>
+    <input type="radio" onClick='ratio(3,2)' id="ratio32" name="rating2" value="2"><i></i>
+    <input type="radio" onClick='ratio(3,3)' id="ratio33" name="rating2" value="3"><i></i>
+    <input type="radio" onClick='ratio(3,4)' id="ratio34" name="rating2" value="4"><i></i>
+    <input type="radio" onClick='ratio(3,5)' id="ratio35" name="rating2" value="5"><i></i>
+    <input type="radio" onClick='ratio(3,6)' id="ratio36" name="rating2" value="6"><i></i>
+    <input type="radio" onClick='ratio(3,7)' id="ratio37" name="rating2" value="7"><i></i>
+    <input type="radio" onClick='ratio(3,8)' id="ratio38" name="rating2" value="8"><i></i>
+    <input type="radio" onClick='ratio(3,9)' id="ratio39" name="rating2" value="9"><i></i>
+    <input type="radio" onClick='ratio(3,10)' id="ratio301" name="rating2" value="10"><i></i>
+</span> 
+<div id="result35"  class="results"> </div>
+
+<!-- END OF STAR Nº2 -->
+
+<!-- STAR 3 CLASS -->
+<div class="clear"></div>
+<hr class="survey-hr">
+<label id="Questionss"><b>Tempo que você levou para ser atendido por Telefone (0800-7700666 ou
+2029-7300)?</b>
+</label> <br>
+<label id="Text">
+    Instruções da pergunta: Considerar 1 para Insatisfeito e 10 para Muito Satisfeito
+</label>
+<div class="rating"></div>
+
+<!-- STAR Nº3 -->
+<span class="star-rating">
+    <input type="radio" onClick='ratio(4,1)' id="ratio41" name="rating3" value="1"><i></i>
+    <input type="radio" onClick='ratio(4,2)' id="ratio42" name="rating3" value="2"><i></i>
+    <input type="radio" onClick='ratio(4,3)' id="ratio43" name="rating3" value="3"><i></i>
+    <input type="radio" onClick='ratio(4,4)' id="ratio44" name="rating3" value="4"><i></i>
+    <input type="radio" onClick='ratio(4,5)' id="ratio45" name="rating3" value="5"><i></i>
+    <input type="radio" onClick='ratio(4,6)' id="ratio46" name="rating3" value="6"><i></i>
+    <input type="radio" onClick='ratio(4,7)' id="ratio47" name="rating3" value="7"><i></i>
+    <input type="radio" onClick='ratio(4,8)' id="ratio48" name="rating3" value="8"><i></i>
+    <input type="radio" onClick='ratio(4,9)' id="ratio49" name="rating3" value="9"><i></i>
+    <input type="radio" onClick='ratio(4,10)' id="ratio410" name="rating3" value="10"><i></i>
+</span>
+<div id="result36"  class="results"></div>
+<!-- END OF STAR Nº3 -->
+
+<!-- STAR 4 CLASS -->
+<hr class="survey-hr">
+<label id="Questionss"><b>Atenção e Cordialidade do Atendente por Telefone (0800-7700666 ou
+2029-7300)?</b></label> <br>
+<label id="Text">
+    Instruções da pergunta: Considerar 1 para Insatisfeito e 10 para Muito Satisfeito
+</label>
+<div class="rating"></div>
+
+<!-- STAR Nº4 -->
+<span class="star-rating">
+    <input type="radio" onClick='ratio(5,1)' id="ratio51" name="rating4" value="1"><i></i>
+    <input type="radio" onClick='ratio(5,2)' id="ratio52" name="rating4" value="2"><i></i>
+    <input type="radio" onClick='ratio(5,3)' id="ratio53" name="rating4" value="3"><i></i>
+    <input type="radio" onClick='ratio(5,4)' id="ratio54" name="rating4" value="4"><i></i>
+    <input type="radio" onClick='ratio(5,5)' id="ratio55" name="rating4" value="5"><i></i>
+    <input type="radio" onClick='ratio(5,6)' id="ratio56" name="rating4" value="6"><i></i>
+    <input type="radio" onClick='ratio(5,7)' id="ratio57" name="rating4" value="7"><i></i>
+    <input type="radio" onClick='ratio(5,8)' id="ratio58" name="rating4" value="8"><i></i>
+    <input type="radio" onClick='ratio(5,9)' id="ratio59" name="rating4" value="9"><i></i>
+    <input type="radio" onClick='ratio(5,10)' id="ratio510" name="rating4" value="10"><i></i>
+</span>
+<div id="result37"  class="results"></div>
+<!-- END OF STAR Nº4 -->
+
+<!-- STAR 5 CLASS -->
+<hr class="survey-hr">
+<label id="Questionss"><b>Como você avalia o atendimento de nossa Assistente Virtual (Cris)?   
+</b>
+</label> <br>
+<label id="Text">
+    Instruções da pergunta: Considerar 1 para Insatisfeito e 10 para Muito Satisfeito
+</label>
+<br>
+<!-- STAR 5 -->
+<span class="star-rating">
+    <input type="radio" onClick='ratio(6,1)' id="ratio61" name="rating5" value="1"><i></i>
+    <input type="radio" onClick='ratio(6,2)' id="ratio62" name="rating5" value="2"><i></i>
+    <input type="radio" onClick='ratio(6,3)' id="ratio63" name="rating5" value="3"><i></i>
+    <input type="radio" onClick='ratio(6,4)' id="ratio64" name="rating5" value="4"><i></i>
+    <input type="radio" onClick='ratio(6,5)' id="ratio65" name="rating5" value="5"><i></i>
+    <input type="radio" onClick='ratio(6,6)' id="ratio66" name="rating5" value="6"><i></i>
+    <input type="radio" onClick='ratio(6,7)' id="ratio67" name="rating5" value="7"><i></i>
+    <input type="radio" onClick='ratio(6,8)' id="ratio68" name="rating5" value="8"><i></i>
+    <input type="radio" onClick='ratio(6,9)' id="ratio69" name="rating5" value="9"><i></i>
+    <input type="radio" onClick='ratio(6,10)' id="ratio610" name="rating5" value="10"><i></i>
+</span>
+<div id="result38"  class="results"></div>
+<!-- END OF STAR 5 -->
+<!-- END OF THE FIRST SET OF STARTS TOTALIZING 5 -->
+
+<div class="clear"></div>
+<hr class="survey-hr">
+<label id="Questionss"><b>Sua solicitação foi resolvida por meio do atendimento da Assistente Virtual (Cris)?
+</b></label><br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label> <br> <br>
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Sim <br>
+</label><br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Não, mas resolvi com o atendimento humano (Pessoalmente)
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Não resolvi
+</label><br> <br>
+
+<hr class="survey-hr">
+<label id="Questionss"><b>O que você solicitou e não foi resolvido por nossa Assistente Virtual (Cris)?
+</b></label> <br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label> <br> <br>
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Agendamento em Geral <br>
+</label><br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Alteração Cadastral
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Boleto de pagamento
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Declaração de pagamento / Imposto de Renda
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Rede Credenciada
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Segunda Via Carteirinha / Contrato
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Outros
+</label><br> <br>
+
+<hr class="survey-hr">
+<label id="Questionss">
+<b>Qual solicitação você fez e que não foi atendida por nossa Assistente Virtual (Cris)?</b>
+</label><br>
+<label id="Text">
+    Instruções da pergunta: Esta informação é muito importante para que possamos melhorar o nosso atendimento
+</label> <br> <br>
+
+<textarea class="TextArea1" name="Outros2" cols="28" name="commentText" rows="2"></textarea> <br> <br>
+
+<hr class="survey-hr">
+<label id="Questionss"><b>Você teve o retorno de seu e-mail conforme o prazo informado pelo Plano de Saúde São
+Cristóvão?</b></label><br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label> <br> <br>
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Sim <br>
+</label><br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Não
+</label><br> <br>
+<hr class="survey-hr">
+<label id="Questionss">
+<b>O que você solicitou e que não foi atendido dentro do prazo informado?</b> </label><br>
+<label id="Text">
+    Instruções da pergunta: Esta informação é muito importante para que possamos melhorar o nosso atendimento
+</label> <br> <br>
+
+<textarea class="TextArea1" name="Outros2" cols="28" name="commentText" rows="2"></textarea> <br> <br>
+
+<hr class="survey-hr">
+<label id="Questionss"><b>Qual especialidade ou serviço você tem maior dificuldade para encontrar em sua região?
+</b></label><br> 
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label> <br> <br>
+
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Cardiologia <br>
+</label><br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Clínica Geral
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Ginecologia ou Ginecologia / Obstetrícia
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Oftalmologia
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Ortopedia
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Pediatria
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Psicologia
+
+</label><br> <br>
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Fonoaudiologia
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Fisioterapia
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Fisioterapia
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Terapia Ocupacional
+</label><br> <br>
+
+<input type="checkbox" id="Outros" name="Outros" value="Outros">
+<label for="Prazo2"> Outros
+</label><br> <br>
+
+<hr class="survey-hr">
+<label id="Questionss">
+<b>Qual é a especialidade ou serviço que você tem maior dificuldade para encontrar?</b> </label><br>
+<label id="Text">
+    Instruções da pergunta: Esta informação é muito importante para que possamos melhorar o nosso atendimento
+</label> <br> <br> 
+<textarea class="TextArea1" name="Outros2" cols="28" name="commentText" rows="2"></textarea> <br> <br>
+
+
+<hr class="survey-hr">
+<label id="Questionss">
+<b>Qual é o nome do local da Rede Credenciada em que você foi atendido pela última vez (exceto as
+Unidades do São Cristóvão)?</b> </label><br> <br>
+
+<textarea class="TextArea1" name="Outros2" cols="28" name="commentText" rows="2"></textarea> <br> <br>
+
+
+<hr class="survey-hr">
+<label id="Questionss"><b>No seu último atendimento, no local citado anteriormente, como você avalia o prazo da agenda
+disponibilizada?</b></label>
+<label id="Text">
+    Instruções da pergunta: Considerar 1 para Insatisfeito e 10 para Muito Satisfeito
+</label> <br> 
+<span class="star-rating">
+    <input type="radio" onClick='ratio(7,1)' id="ratio71" name="rating6" value="1"><i></i>
+    <input type="radio" onClick='ratio(7,2)' id="ratio72" name="rating6" value="2"><i></i>
+    <input type="radio" onClick='ratio(7,3)' id="ratio73" name="rating6" value="3"><i></i>
+    <input type="radio" onClick='ratio(7,4)' id="ratio74" name="rating6" value="4"><i></i>
+    <input type="radio" onClick='ratio(7,5)' id="ratio75" name="rating6" value="5"><i></i>
+    <input type="radio" onClick='ratio(7,6)' id="ratio76" name="rating6" value="6"><i></i>
+    <input type="radio" onClick='ratio(7,7)' id="ratio77" name="rating6" value="7"><i></i>
+    <input type="radio" onClick='ratio(7,8)' id="ratio78" name="rating6" value="8"><i></i>
+    <input type="radio" onClick='ratio(7,9)' id="ratio79" name="rating6" value="9"><i></i>
+    <input type="radio" onClick='ratio(7,10)' id="ratio791" name="rating6" value="10"><i></i>
+</span>
+<div id="result39"  class="results"></div>
+
+<hr class="survey-hr">
+<label id="Questionss"><b>Você recebeu a atenção e cordialidade que você esperava durante seu atendimento, no
+credenciado citado?</b></label><br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label> <br> <br>
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Sim <br>
+</label><br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Não
+</label><br> <br>
+
+<hr class="survey-hr">
+<label id="Questionss"><b>Em qual área de atendimento você não foi atendido como esperava?</b></label><br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma ou mais respostas
+</label> <br> <br>
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Recepção <br>
+</label>
+<br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Enfermagem / Exames
+</label>
+<br>
+<br>
+
+<input type="checkbox" id="Prazo" name="Prazo" value="Pergunta">
+<label for="Prazo"> Médico / Terapeuta
+</label>
+<br>
+<br>
+
+
+<hr class="survey-hr">
+<label id="Questionss"><b>Você costuma utilizar o Aplicativo São Cristóvão Saúde?</b></label><br>
+<label id="Text">
+    Instruções da pergunta: Selecione uma resposta
+</label> <br> <br>
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Sim 
+</label>
+<br>
+<br>
+
+<input type="checkbox" id="Canais1" name="Canais1" value="Pergunta">
+<label for="Canais1"> Não. Por qual motivo? 
+</label>
+<br>
+<br>
+
+<div class="Outros4">
+<textarea class="TextArea1" name="Outros" cols="28" name="commentText" rows="2"></textarea>
+</div>
+
+<hr class="survey-hr">
+<div class="clear"> </div>
+
+<input type="submit" style="font-size:14px;background:#002f6c;color:#fff;padding:12px;border:0;cursor: pointer;" value="Enviar suas respostas">
+</form>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<script src="script.js">
+
+</script>
+
+</body>
+
+</html>
