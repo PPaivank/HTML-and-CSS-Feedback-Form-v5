@@ -1,5 +1,5 @@
 .feedback {
-  width: 850px;
+  width: 860px;
   max-width: 2800px;
   background: #fff;
   margin: 0 auto;
@@ -16,7 +16,7 @@
   font-size: 0;
   white-space: nowrap;
   display: inline-block;
-  width: 350px;
+  width: 346px;
   height: 35px;
   overflow: hidden;
   position: relative;
@@ -362,4 +362,38 @@ h2 span {
   top: -37px;
   left: 360px;
 }
+
+.rating-star b {
+  border: 1px solid;
+  padding: 5px;
+}
+
 /* STAR RATING */
+
+input[type='radio']{
+  display: none;
+}
+img:hover{
+  cursor: pointer;
+}
+img{
+  cursor:pointer;
+  pointer-events: none;
+}
+.unselectable {
+  /* user-drag: none;  */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.rating-star{
+  display: flex;
+  flex-direction: row;
+}
+
+/* b{
+  border: 1px solid;
+  padding: 5px;
+} */
